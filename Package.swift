@@ -34,5 +34,9 @@ let package = Package(
             ],
             path: "MacrosKitCompilerPlugin"
         ),
+        .testTarget(
+            name: "MacrosKitTests",
+            dependencies: ["MacrosKit"]
+        ),
     ]
 )

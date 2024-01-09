@@ -9,7 +9,7 @@
 import Foundation
 
 @freestanding(expression)
-public macro URL(_ string: String) -> URL = #externalMacro(module: "Macros", type: "URLMacro")
+public macro URL(_ string: String) -> URL = #externalMacro(module: "MacrosKitCompilerPlugin", type: "URLMacro")
 
 @attached(member, names: arbitrary)
-public macro AssociatedValues() = #externalMacro(module: "Macros", type: "AssociatedValuesMacro")
+public macro AssociatedValues() = #externalMacro(module: "MacrosKitCompilerPlugin", type: "AssociatedValuesMacro")

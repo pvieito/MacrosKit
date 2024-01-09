@@ -20,4 +20,4 @@ jobs:
           known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
       - uses: actions/checkout@v1
       - name: Test
-        run: swift build
+        run: swift test
