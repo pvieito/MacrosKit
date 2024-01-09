@@ -12,7 +12,7 @@ import MacrosKit
 
 class CGRatioTests: XCTestCase {
     func testURLMacro() throws {
-        let url = #URL("https://pvieito.com")
+        let url: URL = #URL("https://pvieito.com")
         XCTAssertNotNil(url)
         XCTAssertEqual(url.absoluteString, "https://pvieito.com")
     }
